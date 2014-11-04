@@ -7,6 +7,7 @@ Our solution to CSE 201's META-APP project.
   - SQL backend to keep a database of mobile apps.
   - Practice using web technologies
 - Practice using the agile methodology to deliver software
+- Efficiently assign and manage tasks during the course of the project.
 
 
 
