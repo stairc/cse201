@@ -1,6 +1,8 @@
 #The Map App
 
-Our solution to CSE 201's META-APP project.
+Authors - Thomas Ricketts, Brandon Wilson, Cameron Stair, Craig D., Sam Bowdler, and Nick Liu
+
+Our solution to CSE 201's META-APP project. 
 
 ##Our Goal
 - Develop a web based (Desktop and Mobile) application
