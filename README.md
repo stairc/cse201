@@ -51,4 +51,8 @@ Our solution to CSE 201's META-APP project.
   - screenshots - low
 
 
-
+Retospective of iteration 1:
+- 3 index cards (worked, didnt work)
+- task board
+- burn down
+- demo text (100 words)
