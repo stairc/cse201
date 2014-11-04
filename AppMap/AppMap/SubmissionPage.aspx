@@ -26,9 +26,9 @@
         <asp:TextBox ID="tbxAppDescription" runat="server" Height="125px" TextMode="MultiLine" Width="280px"></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="btnSubmitApp" runat="server" Text="Submit App" Width="284px" OnClick="btnSubmitApp_Click" />
+        <asp:Button ID="btnSubmitApp" runat="server" Text="Submit App" Width="284px" Height="26px" OnClick="btnSubmitApp_Click" />
         <br />
-        <asp:Label ID="lblErrorText" runat="server" BorderColor="White" BorderWidth="0px" ForeColor="Red" Height="0px" Text="App Name Must Not Be Blank"></asp:Label>
+        <asp:Label ID="lblErrorText" runat="server" BorderColor="White" BorderWidth="0px" ForeColor="Red" Height="0px"></asp:Label>
         <br />
     
     </div>

@@ -11,7 +11,7 @@ namespace AppMap
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblErrorText.Text = "";
+            
         }
 
         protected void btnSubmitApp_Click(object sender, EventArgs e)
