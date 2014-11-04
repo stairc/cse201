@@ -13,38 +13,42 @@ Our solution to CSE 201's META-APP project.
 
 ##Meeting 2:
 - Prioritize features for future iterations
-  - Users need to be able to compare different apps
-  - Users need to be able to rate and review different apps
-  - Search for specific apps
-  - Sorting/filter search results
-  - Cross platform rating systems
-  - Share (email) applications with other people
-  - Ability to request an apps removal from the system
+  - Users need to be able to compare different apps - low (rating)
+  - Users need to be able to rate and review different apps - high
+  - Search for specific apps - - high
+  - Sorting/filter search results - low
+  - Cross platform rating systems - none
+  - Share (email) applications with other people - high
+  - Ability to request an apps removal from the system - low 
   - Any extra features we can think of
 - What data do you want each app to have?
   - Name
   - Store
   - Discription
-  - Publisher name?
-  - Price?
-  - What else?
+  - Link
+  - Publisher name
+  - Price
+  - Rating
+  - App Icons
+  - screen shots - low
 - Any extra requirements?
 - How do you want navigation to be?
+  - search bar
+  - recently added
+  - featured
+  - a to z
 - What should the front page look like?
   - Apps divided by store
   - over all best
   - featured apps?
 - Option for user to submit app URL and we scrape the information from a webpage?
 - Review system details
-  - Star system?
-  - Point system?
-  - People can vote more than once?
-  - People can update reviews?
-  - Cross platorm or platform specific?
+  - Point system
+  - Platform specific
 - Visual assets
   - How to store visual assets in DB
   - App icons
-  - screenshots?
+  - screenshots - low
 
 
 
