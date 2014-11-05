@@ -61,12 +61,12 @@ namespace AppMap
             this.rating = rating;
         }
 
-        public void set(double cost)
+        public void setCost(double cost)
         {
             this.cost = cost;
         }
 
-        public void set()
+        public void setStore(int store)
         {
             this.store = store;
         }
