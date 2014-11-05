@@ -56,3 +56,15 @@ Retospective of iteration 1:
 - task board
 - burn down
 - demo text (100 words)
+
+
+##Tenative DB Schema
+    CREATE TABLE App (
+      Author TEXT NOT NULL,
+      Title PRIMARY KEY TEXT NOT NULL,
+      Description TEXT, 
+      URL TEXT NOT NULL,
+      Rating INT,
+      Cost REAL, 
+      Store INT NOT NULL
+    );
