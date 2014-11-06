@@ -11,9 +11,17 @@
     <div>
     
         <h1>The App Map</h1>
-        <p>&nbsp;</p>
+        <h3>Featured Apps</h3>
+        <br />
+        <br />
+        <h3>Highest Rated Apps</h3>
+        <br />
+        <br />
+        <h3>Recently Added Apps</h3>
+        <br />
+        <br />
         <p>
-            <asp:Button ID="btnSubmitApp" runat="server" Text="Submit App" Width="193px" Height="24px" OnClick="btnSubmitApp_Click" />
+            <asp:Button ID="btnSubmitApp" runat="server" Text="Submit An App" Width="193px" Height="24px" OnClick="btnSubmitApp_Click" />
         </p>
 
     </div>
