@@ -21,7 +21,7 @@ namespace AppMap
             {
                 lblErrorText.Text = "App Name Must Not Be Blank";
             }
-            else if (tbxAppLink.Text == "" || tbxAppLink.Text.IndexOf('.') != -1)
+            else if (tbxAppLink.Text == "" || tbxAppLink.Text.IndexOf('.') == -1)
             {
                 lblErrorText.Text = "App Must Have a Valid Link";
             }
@@ -61,6 +61,14 @@ namespace AppMap
 	            }
 
                 AppDataContainer app = new AppDataContainer(name, publisher, discrip, link, 5, price, store);
+
+                lblAppSubmitted.Text = "App Submitted!";
+                tbxAppName.Text = "";
+                drpAppStore.SelectedIndex = 0;
+                tbxAppLink.Text = "";
+                tbxAppPrice.Text = "";
+                tbxPublisherName.Text = "";
+                tbxAppDescription.Text = "";
             }
         }
 

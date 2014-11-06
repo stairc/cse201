@@ -43,6 +43,7 @@
         <asp:Button ID="btnSubmitApp" runat="server" Text="Submit App" Width="284px" Height="26px" OnClick="btnSubmitApp_Click" />
         <br />
         <asp:Label ID="lblErrorText" runat="server" BorderColor="White" BorderWidth="0px" ForeColor="Red" Height="0px"></asp:Label>
+        <asp:Label ID="lblAppSubmitted" runat="server"></asp:Label>
         <br />
     
     </div>
