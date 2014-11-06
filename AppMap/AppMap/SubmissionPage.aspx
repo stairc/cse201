@@ -9,7 +9,6 @@
 <body>
     <form id="form1" runat="server">
     <div aria-atomic="False" style="width: 308px">
-    
         <h1>Submit Application</h1>
         <br />
         App Name:<br />

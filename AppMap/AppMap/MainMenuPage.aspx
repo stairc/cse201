@@ -10,7 +10,20 @@
     <form id="form1" runat="server">
     <div>
     
-        <h1>The App Map</h1>
+        <asp:Table runat="server">
+            <asp:TableRow>
+                <asp:TableCell>
+                    <h1>The App Map</h1>
+                </asp:TableCell>
+                <asp:TableCell Width="100"/>
+                <asp:TableCell>
+                    <asp:TextBox runat="server" Height="22"></asp:TextBox>
+                </asp:TableCell>
+                <asp:TableCell>
+                    <asp:button text="Search" runat="server" />
+                </asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
         <h3>Featured Apps</h3>
         <br />
         <br />
