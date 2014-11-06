@@ -23,7 +23,7 @@ namespace AppMap
             url_to_product = "Default";
             rating = 0;
             cost = 0.00;
-            store = NULL;
+            store = -1;
         }
         public AppDataContainer(string title, string author, string description, 
                 string url, int rating, double cost, int store)
@@ -52,7 +52,8 @@ namespace AppMap
             this.description = description;
         }
 
-        public void setURL(string url) {
+        public void setURL(string url) 
+        {
             this.url_to_product = url;
         }
 
