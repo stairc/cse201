@@ -1,4 +1,4 @@
-#The Map App
+#The App Map
 
 Authors - Thomas Ricketts, Brandon Wilson, Cameron Stair, Craig D., Sam Bowdler, and Nick Liu
 
