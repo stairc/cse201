@@ -33,7 +33,7 @@ namespace AppMap
             {
                 lblErrorText.Text = "Decription Must Not Be Blank";
             }
-            else
+            else // no errors detected, create app object
             {
                 lblErrorText.Text = "";
 
