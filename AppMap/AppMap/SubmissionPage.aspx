@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div aria-atomic="False">
+    <div aria-atomic="False" style="width: 308px">
     
         <h1>Submit Application</h1>
         <br />
@@ -16,11 +16,25 @@
         <asp:TextBox ID="tbxAppName" runat="server" Width="280px"></asp:TextBox>
         <br />
         <br />
-        App Store:<asp:RadioButtonList ID="rdoAppStore" runat="server">
-            <asp:ListItem>Apple App Store</asp:ListItem>
-            <asp:ListItem>Google Play Store</asp:ListItem>
-            <asp:ListItem>Windows Phone Store</asp:ListItem>
-        </asp:RadioButtonList>
+        App Store:<br />
+        <asp:DropDownList ID="drpAppStore" runat="server">
+                    <asp:ListItem>Apple App Store</asp:ListItem>
+                    <asp:ListItem>Google Play Store</asp:ListItem>
+                    <asp:ListItem>Windows Phone Store</asp:ListItem>
+                  </asp:DropDownList>
+        <br />
+        <br />
+        Link to Store Page:<br />
+        <asp:TextBox ID="tbxAppLink" runat="server" Width="280px"></asp:TextBox>
+        <br />
+        <br />
+        Publisher Name:<br />
+        <asp:TextBox ID="tbxPublisherName" runat="server" Width="280px"></asp:TextBox>
+        <br />
+        <br />
+        Price (leave blank if free):<br />
+        <asp:TextBox ID="tbxAppPrice" runat="server" Width="280px"></asp:TextBox>
+        <br />
         <br />
         Discription:<br />
         <asp:TextBox ID="tbxAppDescription" runat="server" Height="125px" TextMode="MultiLine" Width="280px"></asp:TextBox>

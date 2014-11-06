@@ -31,13 +31,40 @@ namespace AppMap {
         protected global::System.Web.UI.WebControls.TextBox tbxAppName;
         
         /// <summary>
-        /// rdoAppStore control.
+        /// drpAppStore control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rdoAppStore;
+        protected global::System.Web.UI.WebControls.DropDownList drpAppStore;
+        
+        /// <summary>
+        /// tbxAppLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxAppLink;
+        
+        /// <summary>
+        /// tbxPublisherName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxPublisherName;
+        
+        /// <summary>
+        /// tbxAppPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxAppPrice;
         
         /// <summary>
         /// tbxAppDescription control.
