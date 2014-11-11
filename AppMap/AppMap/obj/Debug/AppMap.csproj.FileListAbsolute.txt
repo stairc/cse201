@@ -4,3 +4,17 @@ C:\Users\Cameron\OneDrive\Miami University\2014_Fall\CSE 201\cse201\AppMap\AppMa
 C:\Users\Cameron\OneDrive\Miami University\2014_Fall\CSE 201\cse201\AppMap\AppMap\obj\Debug\AppMap.csprojResolveAssemblyReference.cache
 C:\Users\Cameron\OneDrive\Miami University\2014_Fall\CSE 201\cse201\AppMap\AppMap\obj\Debug\AppMap.dll
 C:\Users\Cameron\OneDrive\Miami University\2014_Fall\CSE 201\cse201\AppMap\AppMap\obj\Debug\AppMap.pdb
+C:\Users\Craig\Source\Repos\cse201\AppMap\AppMap\bin\AppMap.dll.config
+C:\Users\Craig\Source\Repos\cse201\AppMap\AppMap\bin\AppMap.dll
+C:\Users\Craig\Source\Repos\cse201\AppMap\AppMap\bin\AppMap.pdb
+C:\Users\Craig\Source\Repos\cse201\AppMap\AppMap\bin\EntityFramework.dll
+C:\Users\Craig\Source\Repos\cse201\AppMap\AppMap\bin\EntityFramework.SqlServer.dll
+C:\Users\Craig\Source\Repos\cse201\AppMap\AppMap\bin\System.Data.SQLite.dll
+C:\Users\Craig\Source\Repos\cse201\AppMap\AppMap\bin\System.Data.SQLite.EF6.dll
+C:\Users\Craig\Source\Repos\cse201\AppMap\AppMap\bin\System.Data.SQLite.Linq.dll
+C:\Users\Craig\Source\Repos\cse201\AppMap\AppMap\bin\EntityFramework.xml
+C:\Users\Craig\Source\Repos\cse201\AppMap\AppMap\bin\EntityFramework.SqlServer.xml
+C:\Users\Craig\Source\Repos\cse201\AppMap\AppMap\bin\System.Data.SQLite.xml
+C:\Users\Craig\Source\Repos\cse201\AppMap\AppMap\obj\Debug\AppMap.csprojResolveAssemblyReference.cache
+C:\Users\Craig\Source\Repos\cse201\AppMap\AppMap\obj\Debug\AppMap.dll
+C:\Users\Craig\Source\Repos\cse201\AppMap\AppMap\obj\Debug\AppMap.pdb

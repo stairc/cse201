@@ -2,24 +2,29 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Collections.Generic;
 using System.Text;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 
 namespace AppMap
 {
     public class DBInteraction
     {
-        static void Main(string[] args)
+        static string connectionString = @"Data Source = C:\Users\Craig\Source\Repos\cse201\db.sqlite3; Version = 3;";
+        SQLiteConnection dbConnection = new SQLiteConnection(connectionString);
+        
+        public DBInteraction()
         {
-            string connectionString = @"Data Source = C:\Users\Craig\Desktop\201\cse201\AppMap\AppMap; Version = 3;";
-            SqlConnection dbConnection = new SqlConnection(connectionString);
+            dbConnection.Open();
+
+        /*    
+        string connectionString = @"Data Source = C:\Users\Craig\Source\Repos\cse201\db.sqlite3; Version = 3;";
+            SQLiteConnection dbConnection = new SQLiteConnection(connectionString);
             dbConnection.Open();
 
             string query = "SELECT * FROM App";
-            SqlCommand queryCommand = new SqlCommand(query, dbConnection);
-            SqlDataReader queryReader = queryCommand.ExecuteReader();
+            SQLiteCommand queryCommand = new SQLiteCommand(query, dbConnection);
+            SQLiteDataReader queryReader = queryCommand.ExecuteReader();
             DataTable data = new DataTable();
 
             data.Load(queryReader);
@@ -34,10 +39,43 @@ namespace AppMap
                     rowText += data.Rows[i][column.ColumnName] + " | ";
                 }
                 Console.WriteLine(rowText);
+                System.Diagnostics.Debug.WriteLine("Hello world");
             }
 
             dbConnection.Close();
+         */
 
+
+        }
+
+        public void addApp(AppDataContainer app)
+        {
+            string query = "INSERT INTO APP VALUES(" + app.getAuthor() + "," + app.getTitle() + "," + app.getDescription() + "," + app.getURL() + "," + app.getRating() + "," + app.getCost() + "," + app.getStore() + ");";
+            SQLiteCommand queryCommand = new SQLiteCommand(query, dbConnection);
+            queryCommand.ExecuteNonQuery();
+        }
+
+        public List<AppDataContainer> getAllApps()
+        {
+            List<AppDataContainer> apps = new List<AppDataContainer>();
+
+            String query = "SELECT * FROM APP;";
+            SQLiteCommand queryCommand = new SQLiteCommand(query, dbConnection);
+            SQLiteDataReader queryReader = queryCommand.ExecuteReader();
+            DataTable data = new DataTable();
+            data.Load(queryReader);
+
+            //for each row create a new datacontainer and parse out the values and put them in the new appdata object, then add to the apps list
+
+            AppDataContainer appData = new AppDataContainer();
+    
+                   
+            
+            return apps;
+
+        }
+
+        public void RemoveApp(String name)   {
 
         }
     }
