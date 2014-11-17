@@ -11,7 +11,7 @@ namespace AppMap
         private string title;
         private string description;
         private string url_to_product;
-        private int rating;
+        private double rating;
         private double cost;
         private int store; // Stores will be assigned numerical integers. 
 
