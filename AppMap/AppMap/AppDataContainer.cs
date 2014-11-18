@@ -23,8 +23,7 @@ namespace AppMap
             url_to_product = "Default";
             rating = 0;
             cost = 0.00;
-            store = -2
-           ;
+            store = -1;
         }
         public AppDataContainer(string title, string author, string description, 
                 string url, int rating, double cost, int store)
