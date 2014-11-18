@@ -11,7 +11,7 @@ namespace AppMap
     public class DBInteraction
     {
         static string connectionString = @"Data Source = C:\Users\Craig\Source\Repos\cse201\db.sqlite3; Version = 3;";
-        SQLiteConnection dbConnection = new SQLiteConnection(connectionString);
+        static SQLiteConnection dbConnection = new SQLiteConnection(connectionString);
 
         static public void addApp(AppDataContainer app)
         {
