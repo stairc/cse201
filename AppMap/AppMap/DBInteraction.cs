@@ -33,12 +33,19 @@ namespace AppMap
             data.Load(queryReader);
 
             //for each row create a new datacontainer and parse out the values and put them in the new appdata object, then add to the apps list
-           foreach (DataRow row in data.Rows)
+            StringBuilder output = new StringBuilder();
+            foreach (DataRow row in data.Rows)
             {
+                foreach (DataColumn col in data.Columns)
+                {
+                    output.AppendFormat("{0} ", row[col]);
+                }
                 AppDataContainer adc = new AppDataContainer();
-                //parse information
+                string[] elements = output.ToString().Split(null);
                 apps.Add(adc);
+                output.Clear(); //clear for next data item
             }
+            Console.WriteLine(output);
             return apps;
         }
 
