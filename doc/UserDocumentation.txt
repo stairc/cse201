@@ -1,0 +1,8 @@
+App Map
+User Assistant Guide
+
+What is the App Map?
+The App Map is a app catalog that combines the apps from many app stores into one place.
+It gives users a quick snap shot of featured, highly rated, and recently added applications
+in each app store. You can view and write reviews to see and affect public appearance of
+the applications.
