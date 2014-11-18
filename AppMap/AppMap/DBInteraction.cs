@@ -42,10 +42,18 @@ namespace AppMap
                 }
                 AppDataContainer adc = new AppDataContainer();
                 string[] elements = output.ToString().Split(null);
+                
+                adc.setAuthor(elements[0]);
+                adc.setTitle(elements[1]);
+                adc.setDescription(elements[2]);
+                adc.setURL(elements[3]);
+                adc.setRating(Double.Parse(elements[4]));
+                adc.setCost(Double.Parse(elements[5]));
+                adc.setStore(Int32.Parse(elements[6]));
+
                 apps.Add(adc);
                 output.Clear(); //clear for next data item
             }
-            Console.WriteLine(output);
             return apps;
         }
 
