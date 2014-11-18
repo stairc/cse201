@@ -12,14 +12,10 @@ namespace AppMap
     {
         static string connectionString = @"Data Source = C:\Users\Craig\Source\Repos\cse201\db.sqlite3; Version = 3;";
         SQLiteConnection dbConnection = new SQLiteConnection(connectionString);
-        
-        public DBInteraction()
-        {
-            dbConnection.Open();
-        }
 
         static public void addApp(AppDataContainer app)
         {
+            dbConnection.Open();
             string query = "INSERT INTO APP VALUES(" + "\"" + app.getAuthor() + "\"" + "," + "\"" + app.getTitle() + "\"" + "," + "\"" + app.getDescription() + "\"" + "," + "\"" + app.getURL() + "\"" + "," + app.getRating() + "," + app.getCost() + "," + app.getStore() + ");";
             SQLiteCommand queryCommand = new SQLiteCommand(query, dbConnection);
             queryCommand.ExecuteNonQuery();
@@ -27,6 +23,7 @@ namespace AppMap
 
         static public List<AppDataContainer> getAllApps()
         {
+            dbConnection.Open();
             List<AppDataContainer> apps = new List<AppDataContainer>();
 
             String query = "SELECT * FROM APP;";
