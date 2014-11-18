@@ -16,41 +16,11 @@ namespace AppMap
         public DBInteraction()
         {
             dbConnection.Open();
-
-        /*    
-        string connectionString = @"Data Source = C:\Users\Craig\Source\Repos\cse201\db.sqlite3; Version = 3;";
-            SQLiteConnection dbConnection = new SQLiteConnection(connectionString);
-            dbConnection.Open();
-
-            string query = "SELECT * FROM App";
-            SQLiteCommand queryCommand = new SQLiteCommand(query, dbConnection);
-            SQLiteDataReader queryReader = queryCommand.ExecuteReader();
-            DataTable data = new DataTable();
-
-            data.Load(queryReader);
-
-            int firstCoupleRows = 3;
-
-            for (int i = 0; i < firstCoupleRows; i++)
-            {
-                String rowText = string.Empty;
-                foreach (DataColumn column in data.Columns)
-                {
-                    rowText += data.Rows[i][column.ColumnName] + " | ";
-                }
-                Console.WriteLine(rowText);
-                System.Diagnostics.Debug.WriteLine("Hello world");
-            }
-
-            dbConnection.Close();
-         */
-
-
         }
 
         static public void addApp(AppDataContainer app)
         {
-            string query = "INSERT INTO APP VALUES(" + app.getAuthor() + "," + app.getTitle() + "," + app.getDescription() + "," + app.getURL() + "," + app.getRating() + "," + app.getCost() + "," + app.getStore() + ");";
+            string query = "INSERT INTO APP VALUES(" + "\"" + app.getAuthor() + "\"" + "," + "\"" + app.getTitle() + "\"" + "," + "\"" + app.getDescription() + "\"" + "," + "\"" + app.getURL() + "\"" + "," + app.getRating() + "," + app.getCost() + "," + app.getStore() + ");";
             SQLiteCommand queryCommand = new SQLiteCommand(query, dbConnection);
             queryCommand.ExecuteNonQuery();
         }
