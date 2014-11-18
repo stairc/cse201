@@ -48,14 +48,14 @@ namespace AppMap
 
         }
 
-        public void addApp(AppDataContainer app)
+        static public void addApp(AppDataContainer app)
         {
             string query = "INSERT INTO APP VALUES(" + app.getAuthor() + "," + app.getTitle() + "," + app.getDescription() + "," + app.getURL() + "," + app.getRating() + "," + app.getCost() + "," + app.getStore() + ");";
             SQLiteCommand queryCommand = new SQLiteCommand(query, dbConnection);
             queryCommand.ExecuteNonQuery();
         }
 
-        public List<AppDataContainer> getAllApps()
+        static public List<AppDataContainer> getAllApps()
         {
             List<AppDataContainer> apps = new List<AppDataContainer>();
 
@@ -66,16 +66,16 @@ namespace AppMap
             data.Load(queryReader);
 
             //for each row create a new datacontainer and parse out the values and put them in the new appdata object, then add to the apps list
-
-            AppDataContainer appData = new AppDataContainer();
-    
-                   
-            
+           foreach (DataRow row in data.Rows)
+            {
+                AppDataContainer adc = new AppDataContainer();
+                //parse information
+                apps.Add(adc);
+            }
             return apps;
-
         }
 
-        public void RemoveApp(String name)   {
+        static public void RemoveApp(String name)   {
 
         }
     }
