@@ -21,7 +21,7 @@ namespace AppMap
             title = "Default";
             description = "Default";
             url_to_product = "Default";
-            rating = 0;
+            rating = 0.00;
             cost = 0.00;
             store = -1;
         }
@@ -57,7 +57,7 @@ namespace AppMap
             this.url_to_product = url;
         }
 
-        public void setRating(int rating)
+        public void setRating(double rating)
         {
             this.rating = rating;
         }
@@ -90,7 +90,7 @@ namespace AppMap
             return url_to_product;
         }
 
-        public int getRating() {
+        public double getRating() {
             return rating;
         }
 
