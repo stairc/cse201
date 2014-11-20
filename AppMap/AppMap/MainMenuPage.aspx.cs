@@ -44,18 +44,65 @@ namespace AppMap
             string navigationString = "AppDetailPage.aspx?name=";
 
             ImageButton img = (ImageButton)sender;
-            int appNum = int.Parse(img.ID.Remove(0, 11));
+            string name = img.ID.Replace("RecentApp", "");
+            name = name.Replace("Image", "");
+            int appNum = int.Parse(name);
 
             switch (appNum)
             {
+                case 1:
+                    navigationString += RecentApp1Name.Text.Replace(" ", "_");
+                    break;
+                case 2:
+                    navigationString += RecentApp2Name.Text.Replace(" ", "_");
+                    break;
+                case 3:
+                    navigationString += RecentApp3Name.Text.Replace(" ", "_");
+                    break;
+                case 4:
+                    navigationString += RecentApp4Name.Text.Replace(" ", "_");
+                    break;
+                case 5:
+                    navigationString += RecentApp5Name.Text.Replace(" ", "_");
+                    break;
                 default:
                     break;
             }
+
+            Response.Redirect(navigationString);
         }
 
         private void RatedApp_Click(object sender, ImageClickEventArgs e)
         {
+            string navigationString = "AppDetailPage.aspx?name=";
 
+            ImageButton img = (ImageButton)sender;
+            string name = img.ID.Replace("RatedApp", "");
+            name = name.Replace("Image", "");
+            int appNum = int.Parse(name);
+
+            switch (appNum)
+            {
+                case 1:
+                    navigationString += RatedApp1Name.Text.Replace(" ", "_");
+                    break;
+                case 2:
+                    navigationString += RatedApp2Name.Text.Replace(" ", "_");
+                    break;
+                case 3:
+                    navigationString += RatedApp3Name.Text.Replace(" ", "_");
+                    break;
+                case 4:
+                    navigationString += RatedApp4Name.Text.Replace(" ", "_");
+                    break;
+                case 5:
+                    navigationString += RatedApp5Name.Text.Replace(" ", "_");
+                    break;
+                default:
+                    break;
+            }
+
+            Response.Redirect(navigationString);
         }
 
         private void FeaturedApp_Click(object sender, ImageClickEventArgs e)

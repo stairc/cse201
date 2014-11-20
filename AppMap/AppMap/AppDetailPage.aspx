@@ -16,10 +16,22 @@
         <div>
             <asp:Image id="AppImage" Height="150" Width="150" BackColor="Black" runat="server" />
         </div>
-        <br />
+        <div>
+            <asp:Label ID="lblPrice" Font-Size="Larger" Font-Bold="false" runat="server" />
+        </div>
+        <div>
+            <asp:Label ID="lblRating" Font-Size="Larger" Font-Bold="false" runat="server" />
+        </div>
+        <div>
+            <asp:Label ID="lblPurblisher" Font-Size="Larger" Font-Bold="false" runat="server" />
+        </div>
         <div>
             <h3>Discription:</h3>
             <asp:Label Width="500" ID="lblDiscription" runat="server" />
+        </div>
+        <br />
+        <div>
+            <asp:HyperLink id="linkToStore" Text="Click here to get the app." runat="server" />
         </div>
     </form>
 </body>

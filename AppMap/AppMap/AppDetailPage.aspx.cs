@@ -26,7 +26,24 @@ namespace AppMap
                 }
             }
 
+            double price = app.getCost();
+            if (price == 0)
+            {
+                lblPrice.Text = "Free";
+            }
+            else
+            {
+                lblPrice.Text = "$" + price.ToString();
+            }
+
+            double rating = app.getRating();
+            lblRating.Text = "Rating: " + rating.ToString();
+
+            lblPurblisher.Text = "Publisher: " + app.getAuthor();
+
             lblDiscription.Text = app.getDescription();
+
+            linkToStore.NavigateUrl = app.getURL();
         }
     }
 }
