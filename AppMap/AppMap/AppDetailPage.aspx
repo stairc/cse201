@@ -1,0 +1,26 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AppDetailPage.aspx.cs" Inherits="AppMap.AppDetailPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <br />
+        <div>
+            <asp:Label ID="lblTitle" Font-Size="XX-Large" Font-Bold="true" runat="server" />
+        </div>
+        <br />
+        <div>
+            <asp:Image id="AppImage" Height="150" Width="150" BackColor="Black" runat="server" />
+        </div>
+        <br />
+        <div>
+            <h3>Discription:</h3>
+            <asp:Label Width="500" ID="lblDiscription" runat="server" />
+        </div>
+    </form>
+</body>
+</html>

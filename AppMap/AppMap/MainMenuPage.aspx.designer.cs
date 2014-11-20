@@ -37,7 +37,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image FeaturedApp1Image;
+        protected global::System.Web.UI.WebControls.ImageButton FeaturedApp1Image;
         
         /// <summary>
         /// FeaturedApp1Name control.
@@ -64,7 +64,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image FeaturedApp2Image;
+        protected global::System.Web.UI.WebControls.ImageButton FeaturedApp2Image;
         
         /// <summary>
         /// FeaturedApp2Name control.
@@ -91,7 +91,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image FeaturedApp3Image;
+        protected global::System.Web.UI.WebControls.ImageButton FeaturedApp3Image;
         
         /// <summary>
         /// FeaturedApp3Name control.
@@ -118,7 +118,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image FeaturedApp4Image;
+        protected global::System.Web.UI.WebControls.ImageButton FeaturedApp4Image;
         
         /// <summary>
         /// FeaturedApp4Name control.
@@ -145,7 +145,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image FeaturedApp5Image;
+        protected global::System.Web.UI.WebControls.ImageButton FeaturedApp5Image;
         
         /// <summary>
         /// FeaturedApp5Name control.
@@ -172,7 +172,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image RatedApp1Image;
+        protected global::System.Web.UI.WebControls.ImageButton RatedApp1Image;
         
         /// <summary>
         /// RatedApp1Name control.
@@ -199,7 +199,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image RatedApp2Image;
+        protected global::System.Web.UI.WebControls.ImageButton RatedApp2Image;
         
         /// <summary>
         /// RatedApp2Name control.
@@ -226,7 +226,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image RatedApp3Image;
+        protected global::System.Web.UI.WebControls.ImageButton RatedApp3Image;
         
         /// <summary>
         /// RatedApp3Name control.
@@ -253,7 +253,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image RatedApp4Image;
+        protected global::System.Web.UI.WebControls.ImageButton RatedApp4Image;
         
         /// <summary>
         /// RatedApp4Name control.
@@ -280,7 +280,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image RatedApp5Image;
+        protected global::System.Web.UI.WebControls.ImageButton RatedApp5Image;
         
         /// <summary>
         /// RatedApp5Name control.
@@ -307,7 +307,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image RecentApp1Image;
+        protected global::System.Web.UI.WebControls.ImageButton RecentApp1Image;
         
         /// <summary>
         /// RecentApp1Name control.
@@ -334,7 +334,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image RecentApp2Image;
+        protected global::System.Web.UI.WebControls.ImageButton RecentApp2Image;
         
         /// <summary>
         /// RecentApp2Name control.
@@ -361,7 +361,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image RecentApp3Image;
+        protected global::System.Web.UI.WebControls.ImageButton RecentApp3Image;
         
         /// <summary>
         /// RecentApp3Name control.
@@ -388,7 +388,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image RecentApp4Image;
+        protected global::System.Web.UI.WebControls.ImageButton RecentApp4Image;
         
         /// <summary>
         /// RecentApp4Name control.
@@ -415,7 +415,7 @@ namespace AppMap {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image RecentApp5Image;
+        protected global::System.Web.UI.WebControls.ImageButton RecentApp5Image;
         
         /// <summary>
         /// RecentApp5Name control.

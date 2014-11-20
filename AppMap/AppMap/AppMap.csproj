@@ -73,6 +73,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppDetailPage.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -89,6 +90,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDataContainer.cs" />
+    <Compile Include="AppDetailPage.aspx.cs">
+      <DependentUpon>AppDetailPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppDetailPage.aspx.designer.cs">
+      <DependentUpon>AppDetailPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DBInteraction.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
