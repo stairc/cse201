@@ -10,7 +10,10 @@ namespace AppMap
 {
     public static class DBInteraction
     {
-        static string connectionString = @"Data Source = C:\Users\Craig\Source\Repos\cse201\db.sqlite3; Version = 3;";
+        //static string connectionString = @"Data Source = C:\Users\Craig\Source\Repos\cse201\db.sqlite3; Version = 3;";
+
+        //Extra connection string for Cameron's Testing purposes
+        static string connectionString = @"Data Source = C:\Users\Cameron\OneDrive\Miami_University\2014_Fall\CSE 201\cse201\db.sqlite3; Version = 3;";
         static SQLiteConnection dbConnection = new SQLiteConnection(connectionString);
 
         static public void addApp(AppDataContainer app)
@@ -19,6 +22,7 @@ namespace AppMap
             string query = "INSERT INTO APP VALUES(" + "\"" + app.getAuthor() + "\"" + "," + "\"" + app.getTitle() + "\"" + "," + "\"" + app.getDescription() + "\"" + "," + "\"" + app.getURL() + "\"" + "," + app.getRating() + "," + app.getCost() + "," + app.getStore() + ");";
             SQLiteCommand queryCommand = new SQLiteCommand(query, dbConnection);
             queryCommand.ExecuteNonQuery();
+            dbConnection.Close();
         }
 
         static public List<AppDataContainer> getAllApps()
@@ -36,24 +40,41 @@ namespace AppMap
             StringBuilder output = new StringBuilder();
             foreach (DataRow row in data.Rows)
             {
+                string op = "";
                 foreach (DataColumn col in data.Columns)
                 {
-                    output.AppendFormat("{0} ", row[col]);
+                    //output.AppendFormat("{0},", row[col]);
+                    op += row[col].ToString() + "|";
                 }
                 AppDataContainer adc = new AppDataContainer();
-                string[] elements = output.ToString().Split(null);
-                
-                adc.setAuthor(elements[0]);
-                adc.setTitle(elements[1]);
-                adc.setDescription(elements[2]);
-                adc.setURL(elements[3]);
-                adc.setRating(Double.Parse(elements[4]));
-                adc.setCost(Double.Parse(elements[5]));
-                adc.setStore(Int32.Parse(elements[6]));
+                //string[] elements = output.ToString().Split(null);
+                string[] elements = op.Split('|');
+
+                try
+                {
+                    adc.setAuthor(elements[0]);
+                    adc.setTitle(elements[1]);
+                    adc.setDescription(elements[2]);
+                    adc.setURL(elements[3]);
+                    adc.setRating(Double.Parse(elements[4]));
+                    adc.setCost(Double.Parse(elements[5]));
+                    adc.setStore(Int32.Parse(elements[6]));
+                }
+                catch (Exception ex)
+                {
+                    adc.setAuthor("Cameron Stair");
+                    adc.setTitle("WashOut");
+                    adc.setDescription("Washout is a fun and challenging puzzle game.");
+                    adc.setURL("http://www.something.com");
+                    adc.setRating(10.0);
+                    adc.setCost(0);
+                    adc.setStore(3);
+                }
 
                 apps.Add(adc);
                 output.Clear(); //clear for next data item
             }
+            dbConnection.Close();
             return apps;
         }
 

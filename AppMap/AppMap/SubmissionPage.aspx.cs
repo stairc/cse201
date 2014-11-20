@@ -61,6 +61,7 @@ namespace AppMap
 	            }
 
                 AppDataContainer app = new AppDataContainer(name, publisher, discrip, link, 5, price, store);
+                DBInteraction.addApp(app);
 
                 lblAppSubmitted.Text = "App Submitted!";
                 tbxAppName.Text = "";
