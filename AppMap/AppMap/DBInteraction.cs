@@ -8,7 +8,7 @@ using System.Data.SQLite;
 
 namespace AppMap
 {
-    public class DBInteraction
+    public static class DBInteraction
     {
         static string connectionString = @"Data Source = C:\Users\Craig\Source\Repos\cse201\db.sqlite3; Version = 3;";
         static SQLiteConnection dbConnection = new SQLiteConnection(connectionString);
