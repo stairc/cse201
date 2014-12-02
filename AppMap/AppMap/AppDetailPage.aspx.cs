@@ -44,6 +44,13 @@ namespace AppMap
             lblDiscription.Text = app.getDescription();
 
             linkToStore.NavigateUrl = app.getURL();
+
+            string shareURL = "mailto:someone@example.com?subject=Check out this app from The App Map!&body=";
+            shareURL += "http://localhost:53797/AppDetailPage.aspx?name=";
+            shareURL += app.getTitle().Replace(" ", "_") + "\r\n";
+
+            shareLink.NavigateUrl = shareURL;
+
         }
     }
 }

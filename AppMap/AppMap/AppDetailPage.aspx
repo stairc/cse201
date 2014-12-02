@@ -33,6 +33,10 @@
         <div>
             <asp:HyperLink id="linkToStore" Text="Click here to get the app." runat="server" />
         </div>
+        <div>
+            <asp:HyperLink id="shareLink" Text="Click here to share this app with a friend." runat="server" />
+        </div>
+
     </form>
 </body>
 </html>
