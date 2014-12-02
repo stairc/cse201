@@ -396,5 +396,10 @@ namespace AppMap
             Response.Redirect("SubmissionPage.aspx", false);
         }
 
+        protected void searchBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("SearchPage.aspx?s=" + searchText.Text.Replace(" ", "_"));
+        }
+
     }
 }

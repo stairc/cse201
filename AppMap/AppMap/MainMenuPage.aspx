@@ -17,10 +17,10 @@
                 </asp:TableCell>
                 <asp:TableCell Width="255"/>
                 <asp:TableCell>
-                    <asp:TextBox runat="server"></asp:TextBox>
+                    <asp:TextBox id="searchText" runat="server"></asp:TextBox>
                 </asp:TableCell>
                 <asp:TableCell>
-                    <asp:button text="Search" runat="server" />
+                    <asp:button id="searchBtn" text="Search" runat="server" OnClick="searchBtn_Click"/>
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>

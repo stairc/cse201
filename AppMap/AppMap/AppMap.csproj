@@ -85,6 +85,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="MainMenuPage.aspx" />
+    <Content Include="SearchPage.aspx" />
     <Content Include="SubmissionPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -109,6 +110,13 @@
       <DependentUpon>MainMenuPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchPage.aspx.cs">
+      <DependentUpon>SearchPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchPage.aspx.designer.cs">
+      <DependentUpon>SearchPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SubmissionPage.aspx.cs">
       <DependentUpon>SubmissionPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
