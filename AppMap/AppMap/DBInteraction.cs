@@ -81,5 +81,26 @@ namespace AppMap
         static public void RemoveApp(String name)   {
 
         }
+		
+		static public double getAvgRating(String name)    {
+            dbConnection.Open();
+            Double avgRating;
+            String query = "SELECT AVG(Rating) FROM Review WHERE App = " + "\"" + name + "\";";
+            SQLiteCommand queryCommand = new SQLiteCommand(query, dbConnection);
+            SQLiteDataReader queryReader = queryCommand.ExecuteReader();
+            DataTable data = new DataTable();
+            data.Load(queryReader);
+            
+            StringBuilder output = new StringBuilder();
+            foreach (DataRow row in data.Rows)
+            {
+                foreach (DataColumn col in data.Columns)
+                {
+                    output.AppendFormat("{0} ", row[col]);
+                }
+            }
+            return Convert.ToDouble(output.ToString());
+        }
+		
     }
 }
