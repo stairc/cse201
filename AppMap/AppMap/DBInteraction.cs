@@ -102,5 +102,13 @@ namespace AppMap
             return Convert.ToDouble(output.ToString());
         }
 		
+		static public void addReview(ReviewDataContainer review){
+            dbConnection.Open();
+            string query = "INSERT INTO Review VALUES(" + "\"" + review.getName() + "\"" + "," + "\"" + review.getRating() + "\"" + "," + "\"" + review.getComment() + "\");";
+            SQLiteCommand queryCommand = new SQLiteCommand(query, dbConnection);
+            queryCommand.ExecuteNonQuery();
+            dbConnection.Close();
+        }
+		
     }
 }
