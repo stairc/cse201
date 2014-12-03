@@ -26,11 +26,11 @@ namespace AppMap
             this.comment = comment;
         }
 
-        public double getName()
+        public string getName()
         { return name; }
         public double getRating()
         { return rating; }
-        public double getComment()
+        public string getComment()
         { return comment; }
 
         public void setname(string name)
