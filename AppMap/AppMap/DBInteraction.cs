@@ -110,5 +110,50 @@ namespace AppMap
             dbConnection.Close();
         }
 		
+		static public List<ReviewDataContainer> getAllReviews()
+        {
+            dbConnection.Open();
+            List<ReviewDataContainer> reviews = new List<ReviewDataContainer>();
+
+            String query = "SELECT * FROM Review;";
+            SQLiteCommand queryCommand = new SQLiteCommand(query, dbConnection);
+            SQLiteDataReader queryReader = queryCommand.ExecuteReader();
+            DataTable data = new DataTable();
+            data.Load(queryReader);
+
+            //for each row create a new datacontainer and parse out the values and put them in the new appdata object, then add to the apps list
+            StringBuilder output = new StringBuilder();
+            foreach (DataRow row in data.Rows)
+            {
+                string op = "";
+                foreach (DataColumn col in data.Columns)
+                {
+                    //output.AppendFormat("{0},", row[col]);
+                    op += row[col].ToString() + "|";
+                }
+                ReviewDataContainer rdc = new ReviewDataContainer();
+                //string[] elements = output.ToString().Split(null);
+                string[] elements = op.Split('|');
+
+                try
+                {
+                    rdc.setName(elements[0]);
+                    rdc.setRating(Convert.ToDouble(elements[1]));
+                    rdc.setComment(elements[2]);              
+                }
+                catch (Exception ex)
+                {    
+                    rdc.setName("WashOut");
+                    rdc.setComment("Washout is a fun and challenging puzzle game.");                   
+                    rdc.setRating(5.0);           
+                }
+
+                reviews.Add(rdc);
+                output.Clear(); //clear for next data item
+            }
+            dbConnection.Close();
+            return reviews;
+        }
+		
     }
 }
