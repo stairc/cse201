@@ -26,18 +26,18 @@ namespace AppMap
             this.comment = comment;
         }
 
-        protected double getName()
+        public double getName()
         { return name; }
-        protected double getRating()
+        public double getRating()
         { return rating; }
-        protected double getComment()
+        public double getComment()
         { return comment; }
 
-        protected void setname(string name)
+        public void setname(string name)
         { this.name = name; }
-        protected void setRating(double rating)
+        public void setRating(double rating)
         { this.rating = rating; }
-        protected void setComment(string comment)
+        public void setComment(string comment)
         { this.comment = comment; }
     }
 }
