@@ -102,7 +102,7 @@ namespace AppMap
 
                 Label appRating = new Label()
                 {
-                    Text = "Rating: " + item.getRating().ToString() + "/5"
+                    Text = "Rating: " + String.Format("{0:0.0}", item.getRating()) + "/5"
                 };
                 Label appPublisher = new Label()
                 {

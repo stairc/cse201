@@ -37,7 +37,7 @@ namespace AppMap
             }
 
             double rating = app.getRating();
-            lblRating.Text = "Rating: " + rating.ToString() + "/5";
+            lblRating.Text = "Rating: " + String.Format("{0:0.0}", rating) + "/5";
 
             lblPurblisher.Text = "Publisher: " + app.getAuthor();
 
@@ -95,12 +95,20 @@ namespace AppMap
                 row.Cells.Add(commentCell);
 
                 Label ratingLbl = new Label();
-                ratingLbl.Text = "Rating: " + item.getRating().ToString() + "/5";
+                ratingLbl.Text = "Rating: " + String.Format("{0:0.0}", item.getRating()) +"/5";
                 ratingCell.Controls.Add(ratingLbl);
 
                 Label commentLbl = new Label();
                 commentLbl.Width = 350;
-                commentLbl.Text = item.getComment();
+                if (item.getComment() == "")
+                {
+                    commentLbl.Text = "No comment provided.";
+                }
+                else
+                {
+                    commentLbl.Text = item.getComment();
+                }
+
                 commentCell.Controls.Add(commentLbl);
 
                 reviewsTable.Rows.Add(row);
@@ -140,6 +148,7 @@ namespace AppMap
             ratingSelection.SelectedIndex = 0;
             reviewComment.Text = "";
 
+            reviewsTable.Rows.Clear();
             LoadReviews();
         }
     }
