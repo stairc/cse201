@@ -9,6 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div aria-atomic="False" style="width: 308px">
+        <asp:HyperLink NavigateUrl="MainMenuPage.aspx" text="Main Menu" runat="server" />
         <h1>Submit Application</h1>
         <br />
         App Name:<br />
