@@ -91,7 +91,7 @@ namespace AppMap
         }
 
         public double getRating() {
-            return rating;
+            return DBInteraction.getAvgRating(title);
         }
 
         public double getCost() {

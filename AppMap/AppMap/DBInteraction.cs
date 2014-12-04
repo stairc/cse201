@@ -99,7 +99,17 @@ namespace AppMap
                     output.AppendFormat("{0} ", row[col]);
                 }
             }
-            return Convert.ToDouble(output.ToString());
+
+            dbConnection.Close();
+
+            if (output.ToString() == " ")
+            {
+                return 5;
+            }
+            else
+            {
+                return Convert.ToDouble(output.ToString());
+            }
         }
 		
 		static public void addReview(ReviewDataContainer review){
