@@ -6,3 +6,33 @@ The App Map is a app catalog that combines the apps from many app stores into on
 It gives users a quick snap shot of featured, highly rated, and recently added applications
 in each app store. You can view and write reviews to see and affect public appearance of
 the applications.
+
+Instructions:
+1. Main page: 
+   There are three things you can do on a main page:
+   1) You can type in the app name in the search box and hit the search button or press enter, 
+      it will show you the search results of all the apps that have the name you typed in.
+   2) You can click on an app by its icon to go to the app page.
+   3) You can click the submit button and it will take you to the submit page.
+2. Seach page: 
+   If we find one or more matches in our database with your searched app name we will display 
+   all of them on this page with a list and their icons. And you can click on their icons to 
+   view the details.
+3. App page:
+   On an app page there are the following information:
+   1) The price(or if it is free).
+   2) The rating with one decimal from 0 to 5 inclusively.
+   3) Its publisher.
+   4) The detailed description of this app. 
+   5) The link to its corresponding online store.
+   6) The link to share this app.
+4. Submit page:
+   On this page you can submit an app of its information by filling out the following criterias:
+   1) The app name.
+   2) Which online store it belongs to.
+   3) The link to this store.
+   4) The name of its publisher.
+   5) Its price.
+   6) Detailed description.
+   Then you can click the submit button.
+   
