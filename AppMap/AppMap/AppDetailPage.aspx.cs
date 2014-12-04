@@ -76,13 +76,35 @@ namespace AppMap
             }
             else
             {
-                LoadReviews(reviewList);
+                ShowReviews(reviewList);
             }
         }
 
-        private void LoadReviews(List<ReviewDataContainer> reviewList)
+        private void ShowReviews(List<ReviewDataContainer> reviewList)
         {
-            
+            foreach (ReviewDataContainer item in reviewList)
+            {
+                TableRow row = new TableRow();
+                row.Height = 60;
+
+                TableCell ratingCell = new TableCell();
+                ratingCell.Width = 120;
+                TableCell commentCell = new TableCell();
+                commentCell.Width = 350;
+                row.Cells.Add(ratingCell);
+                row.Cells.Add(commentCell);
+
+                Label ratingLbl = new Label();
+                ratingLbl.Text = "Rating: " + item.getRating().ToString() + "/5";
+                ratingCell.Controls.Add(ratingLbl);
+
+                Label commentLbl = new Label();
+                commentLbl.Width = 350;
+                commentLbl.Text = item.getComment();
+                commentCell.Controls.Add(commentLbl);
+
+                reviewsTable.Rows.Add(row);
+            }
         }
 
         protected void submitButton_Click(object sender, EventArgs e)
