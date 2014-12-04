@@ -101,5 +101,28 @@ namespace AppMap
         public int getStore() {
             return store;
         }
+
+        public string getImage()
+        {
+            string HTML = ImageHelper.GetWebsiteHTML(url_to_product);
+            string url = "";
+
+            switch (store)
+            {
+                case 0: //app store
+                    url = ImageHelper.GetAppleImage(HTML);
+                    break;
+                case 1: //android store
+                    url = ImageHelper.GetAndroidImage(HTML);
+                    break;
+                case 2: //windows phone store
+                    url = ImageHelper.GetWindowsPhoneImage(HTML);
+                    break;
+                default:
+                    break;
+            }
+
+            return url;
+        }
     }
 }

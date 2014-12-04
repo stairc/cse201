@@ -154,7 +154,7 @@ namespace AppMap
                 indexList.Add(index);
 
                 AppDataContainer app = appList[index];
-                //FeaturedApp1Image.ImageUrl = app.getImage(); 
+                FeaturedApp1Image.ImageUrl = app.getImage(); 
                 FeaturedApp1Name.Text = app.getTitle();
 
                 // Add Second Featured App
@@ -165,7 +165,7 @@ namespace AppMap
                 indexList.Add(index);
 
                 app = appList[index];
-                //FeaturedApp2Image.ImageUrl = app.getImage(); 
+                FeaturedApp2Image.ImageUrl = app.getImage(); 
                 FeaturedApp2Name.Text = app.getTitle();
 
                 // Add Third Featured App
@@ -176,7 +176,7 @@ namespace AppMap
                 indexList.Add(index);
 
                 app = appList[index];
-                //FeaturedApp3Image.ImageUrl = app.getImage(); 
+                FeaturedApp3Image.ImageUrl = app.getImage(); 
                 FeaturedApp3Name.Text = app.getTitle();
 
                 // Add Fourth Featured App
@@ -187,7 +187,7 @@ namespace AppMap
                 indexList.Add(index);
 
                 app = appList[index];
-                //FeaturedApp4Image.ImageUrl = app.getImage(); 
+                FeaturedApp4Image.ImageUrl = app.getImage(); 
                 FeaturedApp4Name.Text = app.getTitle();
 
 
@@ -199,7 +199,7 @@ namespace AppMap
                 indexList.Add(index);
 
                 app = appList[index];
-                //FeaturedApp5Image.ImageUrl = app.getImage(); 
+                FeaturedApp5Image.ImageUrl = app.getImage(); 
                 FeaturedApp5Name.Text = app.getTitle();
             }
             else
@@ -207,54 +207,56 @@ namespace AppMap
                 switch (appList.Count)
                 {
                     case 1:
-
-                        //FeaturedApp1Image.ImageUrl = appList[0].getImage();
+                        FeaturedApp1Image.ImageUrl = appList[0].getImage();
                         FeaturedApp1Name.Text = appList[0].getTitle();
                         break;
                     case 2:
 
-                        //FeaturedApp1Image.ImageUrl = appList[0].getImage();
+                        FeaturedApp1Image.ImageUrl = appList[0].getImage();
                         FeaturedApp1Name.Text = appList[0].getTitle();
-                        //FeaturedApp2Image.ImageUrl = appList[1].getImage();
+                        FeaturedApp2Image.ImageUrl = appList[1].getImage();
                         FeaturedApp2Name.Text = appList[1].getTitle();
                         break;
                     case 3:
 
-                        //FeaturedApp1Image.ImageUrl = appList[0].getImage();
+                        FeaturedApp1Image.ImageUrl = appList[0].getImage();
                         FeaturedApp1Name.Text = appList[0].getTitle();
-                        //FeaturedApp2Image.ImageUrl = appList[1].getImage();
+                        FeaturedApp2Image.ImageUrl = appList[1].getImage();
                         FeaturedApp2Name.Text = appList[1].getTitle();
-                        //FeaturedApp3Image.ImageUrl = appList[2].getImage();
+                        FeaturedApp3Image.ImageUrl = appList[2].getImage();
                         FeaturedApp3Name.Text = appList[2].getTitle();
                         break;
                     case 4:
 
-                        //FeaturedApp1Image.ImageUrl = appList[0].getImage();
+                        FeaturedApp1Image.ImageUrl = appList[0].getImage();
                         FeaturedApp1Name.Text = appList[0].getTitle();
-                        //FeaturedApp2Image.ImageUrl = appList[1].getImage();
+                        FeaturedApp2Image.ImageUrl = appList[1].getImage();
                         FeaturedApp2Name.Text = appList[1].getTitle();
-                        //FeaturedApp3Image.ImageUrl = appList[2].getImage();
+                        FeaturedApp3Image.ImageUrl = appList[2].getImage();
                         FeaturedApp3Name.Text = appList[2].getTitle();
-                        //FeaturedApp4Image.ImageUrl = appList[3].getImage();
+                        FeaturedApp4Image.ImageUrl = appList[3].getImage();
                         FeaturedApp4Name.Text = appList[3].getTitle();
                         break;
                     case 5:
 
-                        //FeaturedApp1Image.ImageUrl = appList[0].getImage();
+                        FeaturedApp1Image.ImageUrl = appList[0].getImage();
                         FeaturedApp1Name.Text = appList[0].getTitle();
-                        //FeaturedApp2Image.ImageUrl = appList[1].getImage();
+                        FeaturedApp2Image.ImageUrl = appList[1].getImage();
                         FeaturedApp2Name.Text = appList[1].getTitle();
-                        //FeaturedApp3Image.ImageUrl = appList[2].getImage();
+                        FeaturedApp3Image.ImageUrl = appList[2].getImage();
                         FeaturedApp3Name.Text = appList[2].getTitle();
-                        //FeaturedApp4Image.ImageUrl = appList[3].getImage();
+                        FeaturedApp4Image.ImageUrl = appList[3].getImage();
                         FeaturedApp4Name.Text = appList[3].getTitle();
-                        //FeaturedApp5Image.ImageUrl = appList[4].getImage();
+                        FeaturedApp5Image.ImageUrl = appList[4].getImage();
                         FeaturedApp5Name.Text = appList[4].getTitle();
                         break;
                     default:
                         break;
                 }
             }
+
+
+
         }
 
         public void LoadHighestRatedApps()
@@ -297,39 +299,39 @@ namespace AppMap
                 switch (highestList.Count)
                 {
                     case 1:
-                        //RatedApp1Image.ImageUrl = highestList[0].getImage();
+                        RatedApp1Image.ImageUrl = highestList[0].getImage();
                         RatedApp1Name.Text = highestList[0].getTitle();
                         break;
                     case 2:
-                        //RatedApp1Image.ImageUrl = highestList[0].getImage();
-                        //RatedApp2Image.ImageUrl = highestList[1].getImage();
+                        RatedApp1Image.ImageUrl = highestList[0].getImage();
+                        RatedApp2Image.ImageUrl = highestList[1].getImage();
                         RatedApp1Name.Text = highestList[0].getTitle();
                         RatedApp2Name.Text = highestList[1].getTitle();
                         break;
                     case 3:
-                        //RatedApp1Image.ImageUrl = highestList[0].getImage();
-                        //RatedApp2Image.ImageUrl = highestList[1].getImage();
-                        //RatedApp3Image.ImageUrl = highestList[2].getImage();
+                        RatedApp1Image.ImageUrl = highestList[0].getImage();
+                        RatedApp2Image.ImageUrl = highestList[1].getImage();
+                        RatedApp3Image.ImageUrl = highestList[2].getImage();
                         RatedApp1Name.Text = highestList[0].getTitle();
                         RatedApp2Name.Text = highestList[1].getTitle();
                         RatedApp3Name.Text = highestList[2].getTitle();
                         break;
                     case 4:
-                        //RatedApp1Image.ImageUrl = highestList[0].getImage();
-                        //RatedApp2Image.ImageUrl = highestList[1].getImage();
-                        //RatedApp3Image.ImageUrl = highestList[2].getImage();
-                        //RatedApp4Image.ImageUrl = highestList[3].getImage();
+                        RatedApp1Image.ImageUrl = highestList[0].getImage();
+                        RatedApp2Image.ImageUrl = highestList[1].getImage();
+                        RatedApp3Image.ImageUrl = highestList[2].getImage();
+                        RatedApp4Image.ImageUrl = highestList[3].getImage();
                         RatedApp1Name.Text = highestList[0].getTitle();
                         RatedApp2Name.Text = highestList[1].getTitle();
                         RatedApp3Name.Text = highestList[2].getTitle();
                         RatedApp4Name.Text = highestList[3].getTitle();
                         break;
                     default:
-                        //RatedApp1Image.ImageUrl = highestList[0].getImage();
-                        //RatedApp2Image.ImageUrl = highestList[1].getImage();
-                        //RatedApp3Image.ImageUrl = highestList[2].getImage();
-                        //RatedApp4Image.ImageUrl = highestList[3].getImage();
-                        //RatedApp5Image.ImageUrl = highestList[4].getImage();
+                        RatedApp1Image.ImageUrl = highestList[0].getImage();
+                        RatedApp2Image.ImageUrl = highestList[1].getImage();
+                        RatedApp3Image.ImageUrl = highestList[2].getImage();
+                        RatedApp4Image.ImageUrl = highestList[3].getImage();
+                        RatedApp5Image.ImageUrl = highestList[4].getImage();
                         RatedApp1Name.Text = highestList[0].getTitle();
                         RatedApp2Name.Text = highestList[1].getTitle();
                         RatedApp3Name.Text = highestList[2].getTitle();
@@ -349,43 +351,43 @@ namespace AppMap
             switch (appList.Count)
             {
                 case 1:
-                    //RecentApp1Image.ImageUrl = appList[0].getImage();
+                    RecentApp1Image.ImageUrl = appList[0].getImage();
                     RecentApp1Name.Text = appList[0].getTitle();
                     break;
                 case 2:
-                    //RecentApp1Image.ImageUrl = appList[0].getImage();
+                    RecentApp1Image.ImageUrl = appList[0].getImage();
                     RecentApp1Name.Text = appList[0].getTitle();
-                    //RecentApp2Image.ImageUrl = appList[1].getImage();
+                    RecentApp2Image.ImageUrl = appList[1].getImage();
                     RecentApp2Name.Text = appList[1].getTitle();
                     break;
                 case 3:
-                    //RecentApp1Image.ImageUrl = appList[0].getImage();
+                    RecentApp1Image.ImageUrl = appList[0].getImage();
                     RecentApp1Name.Text = appList[0].getTitle();
-                    //RecentApp2Image.ImageUrl = appList[1].getImage();
+                    RecentApp2Image.ImageUrl = appList[1].getImage();
                     RecentApp2Name.Text = appList[1].getTitle();
-                    //RecentApp3Image.ImageUrl = appList[2].getImage();
+                    RecentApp3Image.ImageUrl = appList[2].getImage();
                     RecentApp3Name.Text = appList[2].getTitle();
                     break;
                 case 4:
-                    //RecentApp1Image.ImageUrl = appList[0].getImage();
+                    RecentApp1Image.ImageUrl = appList[0].getImage();
                     RecentApp1Name.Text = appList[0].getTitle();
-                    //RecentApp2Image.ImageUrl = appList[1].getImage();
+                    RecentApp2Image.ImageUrl = appList[1].getImage();
                     RecentApp2Name.Text = appList[1].getTitle();
-                    //RecentApp3Image.ImageUrl = appList[2].getImage();
+                    RecentApp3Image.ImageUrl = appList[2].getImage();
                     RecentApp3Name.Text = appList[2].getTitle();
-                    //RecentApp4Image.ImageUrl = appList[3].getImage();
+                    RecentApp4Image.ImageUrl = appList[3].getImage();
                     RecentApp4Name.Text = appList[3].getTitle();
                     break;
                 default:
-                    //RecentApp1Image.ImageUrl = appList[0].getImage();
+                    RecentApp1Image.ImageUrl = appList[0].getImage();
                     RecentApp1Name.Text = appList[0].getTitle();
-                    //RecentApp2Image.ImageUrl = appList[1].getImage();
+                    RecentApp2Image.ImageUrl = appList[1].getImage();
                     RecentApp2Name.Text = appList[1].getTitle();
-                    //RecentApp3Image.ImageUrl = appList[2].getImage();
+                    RecentApp3Image.ImageUrl = appList[2].getImage();
                     RecentApp3Name.Text = appList[2].getTitle();
-                    //RecentApp4Image.ImageUrl = appList[3].getImage();
+                    RecentApp4Image.ImageUrl = appList[3].getImage();
                     RecentApp4Name.Text = appList[3].getTitle();
-                    //RecentApp5Image.ImageUrl = appList[4].getImage();
+                    RecentApp5Image.ImageUrl = appList[4].getImage();
                     RecentApp5Name.Text = appList[4].getTitle();
                     break;
             }

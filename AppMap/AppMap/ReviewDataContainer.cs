@@ -33,7 +33,7 @@ namespace AppMap
         public string getComment()
         { return comment; }
 
-        public void setname(string name)
+        public void setName(string name)
         { this.name = name; }
         public void setRating(double rating)
         { this.rating = rating; }

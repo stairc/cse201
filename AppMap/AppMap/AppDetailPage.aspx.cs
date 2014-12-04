@@ -37,13 +37,15 @@ namespace AppMap
             }
 
             double rating = app.getRating();
-            lblRating.Text = "Rating: " + rating.ToString();
+            lblRating.Text = "Rating: " + rating.ToString() + "/5";
 
             lblPurblisher.Text = "Publisher: " + app.getAuthor();
 
             lblDiscription.Text = app.getDescription();
 
             linkToStore.NavigateUrl = app.getURL();
+
+            AppImage.ImageUrl = app.getImage();
 
             string shareURL = "mailto:someone@example.com?subject=Check out this app from The App Map!&body=";
             shareURL += "http://localhost:53797/AppDetailPage.aspx?name=";
