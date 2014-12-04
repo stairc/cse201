@@ -43,6 +43,8 @@ namespace AppMap
                     Width = 150,
                     Height = 150
                 };
+                img.ImageUrl = item.getImage();
+
                 TableCell imgCell = new TableCell()
                 {
                     Height = 150,
