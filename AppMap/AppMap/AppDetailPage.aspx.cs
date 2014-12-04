@@ -95,7 +95,7 @@ namespace AppMap
                 row.Cells.Add(commentCell);
 
                 Label ratingLbl = new Label();
-                ratingLbl.Text = "Rating: " + String.Format("{0:0.0}", item.getRating()) +"/5";
+                ratingLbl.Text = "Rating: " + item.getRating().ToString() + "/5";
                 ratingCell.Controls.Add(ratingLbl);
 
                 Label commentLbl = new Label();
