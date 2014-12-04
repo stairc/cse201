@@ -14,7 +14,7 @@
         </div>
         <br />
         <div>
-            <asp:Image id="AppImage" Height="150" Width="150" BackColor="White" runat="server" />
+            <asp:Image id="AppImage" Height="175" Width="175" BackColor="White" runat="server" />
         </div>
         <div>
             <asp:Label ID="lblPrice" Font-Size="Larger" Font-Bold="false" runat="server" />

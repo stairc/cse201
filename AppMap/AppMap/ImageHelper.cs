@@ -62,6 +62,22 @@ namespace AppMap
         {
             string url = "";
 
+            try
+            {
+                string searchStr = "width=" + ('"').ToString() + "175";
+                int index = HTML.IndexOf(searchStr);
+                HTML = HTML.Substring(index);
+            
+                index = HTML.IndexOf("src-swap=");
+                HTML = HTML.Substring(index + 10);
+
+                index = HTML.IndexOf('"');
+                url = HTML.Substring(0, index);
+            }
+            catch (Exception)
+            {
+            }
+
             return url;
         }
     }
